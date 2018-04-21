@@ -72,6 +72,11 @@
         <enabled>false</enabled>
       </snapshots>
     </repository>
+    <repository>
+      <id>my-maven-public-repo</id>
+      <name>My Maven Public Repository</name>
+      <url>http://akimac28.kyoto-su.ac.jp:8081/repository/maven-public/</url>
+    </repository>
   </repositories>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -241,4 +246,16 @@
       </plugin>
     </plugins>
   </build>
+  <distributionManagement>
+    <snapshotRepository>
+      <id>my-maven-snapshot-repo</id>
+      <name>My Maven SNAPSHOT Repository</name>
+      <url>http://akimac28.kyoto-su.ac.jp:8081/repository/maven-snapshots/</url>
+    </snapshotRepository>
+    <repository>
+      <id>my-maven-releases-repo</id>
+      <name>My Maven Releases Repository</name>
+      <url>http://akimac28.kyoto-su.ac.jp:8081/repository/maven-releases/</url>
+    </repository>
+  </distributionManagement>
 </project>
