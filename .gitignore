@@ -3,3 +3,12 @@
 .settings
 .gitignore
 */bin/
+.factorypath
+
+# IntelliJ
+.idea
+*.iml
+
+ # output files
+*/bin/
+*/target/
